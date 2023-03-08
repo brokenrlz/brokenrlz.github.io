@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Resume" />
+    <meta property="og:type" content="Curriculum Vitae" />
+    <meta property="og:url" content=" http://www.example.com" />
+    <meta property="og:image" content=" http://example.com/image.jpg" />
+    <meta property="og:description" content="Este es un Curriculum Vitae" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        JUAN <br />
+        OJEDA
+      </h1>
+      <p id="parrafo-header">Developer</p>
+      <div id="contacto">
+        <img
+          class="logos"
+          id="logo-ubicacion"
+          src="images/ubicacion.png"
+          alt="ubicacion-perfil"
+        />
+        <p class="parrafo-contacto">Santa Rosa, La Pampa Argentina</p>
+        <img
+          class="logos"
+          id="logo-telefono"
+          src="images/telefono.png"
+          alt="telefono-perfil"
+        />
+        <p class="parrafo-contacto">2954-58XXXX</p>
+        <img
+          class="logos"
+          id="logo-email"
+          src="images/email.png"
+          alt="email-perfil"
+        />
+        <p class="parrafo-contacto">juan.ojedaa@hotmail.com</p>
+      </div>
+    </header>
+    <nav id="navigation">
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#soft-skills">Soft Skills</a></li>
+        <li><a href="#contacto">Contact</a></li>
+        <li><a href="#experience">Work Experience</a></li>
+      </ul>
+    </nav>
+    <main id="container">
+      <!-- Dividi la pagina en dos lados  -->
+
+      <div id="left-side">
+        <img id="imagen-perfil" src="images/dog.png" alt="dog-perfil" />
+
+        <section id="about">
+          <h2>About Me</h2>
+          <p id=" descripcion">
+            Me considero una persona positiva, con capacidad para resolucion de
+            problemas, que le gusta trabajar en equipo y no duda en preguntar.
+          </p>
+          <p id="text2" class="text2">
+            Actualmente me encuentro realizando el programa Argentina programa ,
+            para insertarme en el mundo IT, no tengo problemas en mudarme o
+            realizar teletrabajo.
+          </p>
+        </section>
+        <button id="more-btn" class="more-btn" onclick="show()" type="button">
+          Read more
+        </button>
+        <button id="less-btn" class="less-btn" onclick="show()" type="button">
+          Read Less
+        </button>
+
+        <div class="linea"></div>
+        <section id="social-media">
+          <h2>Social Links</h2>
+          <div class="social-links">
+            <ul>
+              <li>
+                Facebook: <br />
+                facebook.com/ojeda
+              </li>
+              <li>
+                Instagram: <br />
+                instagram.com/ojeda
+              </li>
+              <li>
+                Twitter: <br />
+                twitter.com/ojeda
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <div id="right-side">
+        <div class="linea2"></div>
+        <section id="skills">
+          <h2>SKILLS</h2>
+          <div class="skills-list">
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JAVASCRIPT</li>
+              <li>JAVA</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="education">
+          <h2>EDUCATION</h2>
+          <div class="education-list">
+            <ul>
+              <li>
+                Primeros pasos Desarrollo Front End - Argentina Programa (2023)
+              </li>
+              <li>
+                Secundario - Colegio Secundario Nocturno Héctor Ayax Guiñazú
+                (2006)
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="soft-skills">
+          <h2>SOFT SKILLS</h2>
+          <div class="soft-list">
+            <ul>
+              <li>Communication</li>
+              <li>Organization</li>
+              <li>Creativity</li>
+              <li>Perseverance</li>
+              <li>Problem Solving</li>
+              <li>Curiosity</li>
+              <li>Interest in Helping Others</li>
+            </ul>
+          </div>
+        </section>
+        <section id="experience">
+          <h2>WORK EXPERIENCE</h2>
+          <div class="experience-list">
+            <ul>
+              <li>Mecanico de Autos (2008-2013)</li>
+              <li>Empleado publico (2013-present)</li>
+            </ul>
+          </div>
+        </section>
+
+        <a href="/archivo/resume.pdf" download="resume.pdf"
+          ><button class="download" type="button">Download PDF</button></a
+        >
+      </div>
+    </main>
+    <footer>Git Hub</footer>
+  </body>
+  <script src="/scripts/main.js"></script>
+</html>
